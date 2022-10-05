@@ -1,8 +1,8 @@
 // import third-party nodejs module Connect
-const connect = require('connect');
+import express from "express";
 
 // instantiate app-server
-const app = connect();
+const app = express();
 
 // custom middleware
 function helloWorld(req, res, next){
