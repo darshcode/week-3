@@ -33,21 +33,21 @@ app.use.session({
 
 
 
-// custom middleware
+/* // custom middleware
 function helloWorld(req, res, next){
     res.setHeader('Content-Type','text/plain');
     res.end('Hello World');
-};
+}; */
 
-// custom middleware
+/* // custom middleware
 function byeWorld(req, res, next){
     res.setHeader('Content-Type','text/plain');
     res.end('Good Bye World');
-};
+}; */
 
 // add middleware to connect application
 app.use('/hello',helloWorld);
-app.use('/bye', byeWorld);
+//app.use('/bye', byeWorld);
 
 // run app
 app.listen(3000);
